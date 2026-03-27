@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6</title>
+</head>
+<body>
+    <h2>Claculator</h2> <hr>
+
+   <form >
+    Num1: <input type="text"  id="firstNumber" placeholder="Enter first number..."> <br><br>
+   Num2: <input type="text"  id="secondNumber" placeholder="Enter second number..."><br><br>
+
+   <select name="" id="operation">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+   </select>
+   <input type="button" name="" onclick="operate()" value="Operate"><br><br>
+   <input type="reset" value="Clear">
+   </form>
+
+   <h3 id="result">Ans : 0</h3>
+</body>
+
+<script>
+    let num1 = document.getElementById("firstNumber") 
+    let num2 = document.getElementById("secondNumber") 
+    let operation = document.getElementById("operation")
+    let result = document.getElementById("result")
+
+    function operate(){
+        let firstNumber = Number(num1.value);
+        let secondNumber = Number(num2.value);
+        let operator = operation.value;
+
+        let finalResult;
+        switch(operator){
+            case '+' : finalResult = firstNumber + secondNumber; break;
+            case '-' : finalResult = firstNumber - secondNumber; break;
+            case '*' : finalResult = firstNumber * secondNumber; break;
+            case '/' : finalResult = firstNumber / secondNumber; break;
+            default : finalResult = "Error operation...!"
+        }
+
+        result.innerHTML = `Ans : ${finalResult}`
+    }
+</script>
+</html>

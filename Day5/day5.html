@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+</head>
+<body>
+    Dom My page
+
+    <h1 id="titel">Hello peter</h1>
+
+    <h2>This is my lesson</h2>
+    <h2>Peter lwin</h2>
+
+    <input type="text" class="" name="" id="" value="">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum esse magnam sequi. Tenetur voluptate, veniam, iusto sit, perferendis animi corrupti harum autem eum molestiae obcaecati officia illo voluptatibus quo voluptates.</p>
+
+    <button id="btn-click" class="User name">Click me</button>
+</body>
+
+<script>
+    let header = document.getElementById('titel')
+
+    header.innerHTML = "smart body and hansum type"
+
+    console.log(header);
+
+    let className = document.getElementsByClassName('h2')
+    className.innerHTML = "she is beauty girle"
+    className.innerHTML = "baby lay"
+    console.log(className);
+    
+    document.getElementById("btn-click").addEventListener("click",function(){
+        console.log("hello peter");
+        
+    })
+</script>
+</html>
