@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: white;
+        }
+        .ac-boutton {
+            background-color: rgb(204, 204, 145);
+        }
+
+        #calculator {
+            height: auto;
+            margin: auto;
+            width: 278px;
+            background-color: antiquewhite;
+            position: relative;
+            display: block;
+            max-width: 320px;
+            padding: 5px;
+            border-radius: 7px;
+            margin-top: 100px;
+            font-size: 1em;
+        }
+
+        button {
+            width: 60px;
+            height: 60px;
+            margin: 4px 2px;
+            outline: none;
+            border: none;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        #result {
+            width: 100%;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2.5em;
+            color: black;
+            text-align: right;
+            background-color:inherit;
+            padding: 15px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <div id="result">0</div>
+
+            <button class="ac-button" onclick="clearForm(this)" >Ac</button>
+            <button onclick="getNumber(this)">7</button>
+            <button onclick="getNumber(this)">8</button>
+            <button onclick="getNumber(this)">9</button>
+            <button onclick="getNumber(this)">/</button>
+            <button onclick="getNumber(this)">5</button>
+            <button onclick="getNumber(this)">6</button>
+            <button onclick="getNumber(this)">7</button>
+            <button onclick="getNumber(this)">*</button>
+            <button onclick="getNumber(this)">1</button>
+            <button onclick="getNumber(this)">2</button>
+            <button onclick="getNumber(this)">3</button>
+            <button onclick="getNumber(this)">-</button>
+            <button onclick="getNumber(this)">0</button>
+            <button onclick="getNumber(this)">.</button>
+            <button onclick="getNumber(this)">=</button>
+            <button onclick="getNumber(this)">+</button>
+    </div>
+</body>
+
+<script src="./day7.js"></script>
+</html>
