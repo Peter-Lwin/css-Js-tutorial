@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Call</title>
+</head>
+<body>
+    Hello Api
+</body>
+<script>
+    let dataFetching = async ()=>{
+       
+        try{
+             let respone = await fetch("https://fakestoreapi.com/products")
+        let products = await respone.json();
+        console.log(products);
+        }catch(e){
+            console.log("error"+ e); 
+        }
+    }
+    dataFetching();
+</script>
+</html>
